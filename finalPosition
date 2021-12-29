@@ -1,0 +1,23 @@
+function finalPosition(moves){
+  let acceptedSchools = []
+  let x = 0;
+  let y = 0;
+  for (let a of moves){
+    if (a == "north"){ 
+      y += 1;
+    }
+    else if (a == "south"){ 
+      y -= 1;
+    }
+    else if (a == "east"){ 
+      x += 1;
+    }
+    else{ 
+      x -= 1;
+    }
+  }
+  acceptedSchools.push(x);
+  acceptedSchools.push(y)
+  return acceptedSchools
+}
+
