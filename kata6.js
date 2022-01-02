@@ -22,7 +22,7 @@ function whereCanIPark(data, vehicle) {
     }
   }
   if (b.length === 0){
-    return "Sorry, there are no spots available"
+    return false
   }
 
   else{
